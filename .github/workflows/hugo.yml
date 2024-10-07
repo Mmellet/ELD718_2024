@@ -72,3 +72,7 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
+
+      - name: Generate EPUB
+        run: |
+          bash ./deploy.sh
