@@ -61,6 +61,10 @@ jobs:
         with:
           path: ./public
 
+      - name: Generate EPUB
+        run: |
+          bash scripts/deploy.sh
+
   # Deployment job
   deploy:
     environment:
