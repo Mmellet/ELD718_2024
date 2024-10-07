@@ -63,7 +63,7 @@ jobs:
 
       - name: Generate EPUB
         run: |
-          bash scripts/deploy.sh
+          bash deploy.sh
 
   # Deployment job
   deploy:
