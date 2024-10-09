@@ -12,7 +12,7 @@ permissions:
   pull-requests: write
 
 jobs:
-  hugo-version:
+  hugo_version:
     runs-on: ubuntu-22.04
     concurrency:
       group: ${{ github.workflow }}-${{ github.ref }}
