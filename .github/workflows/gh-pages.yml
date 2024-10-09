@@ -31,35 +31,22 @@ jobs:
       - name: Install jpegoptim
         run: sudo apt-get update && sudo apt-get install jpegoptim -y
 
-      - name: Run image optimization and Hugo build
+      - name: Generate EPUB
         run: |
-          # Optimisation des images JPEG avec une compression agressive (réduction de qualité à 85%)
           jpegoptim --max=85 *.jpg
-
-          # Étape 1: Exécuter Hugo pour générer le contenu dans le répertoire temp
-          hugo --cleanDestinationDir --environment epub -d public
-
-          # Étape 2: Naviguer dans le répertoire généré par Hugo
-          cd public
-
+          hugo --cleanDestinationDir --environment epub -d temp
+          cd temp
           find uploads -name '*.jpg' -exec jpegoptim {} \;
-
-          # Étape 4: Supprimer l'ancien fichier EPUB s'il existe
           rm -f ../ebook.epub
-
-          # Étape 5: Créer l'EPUB avec le fichier mimetype non compressé
           zip -X0 ../ebook.epub mimetype
-
-          # Étape 6: Ajouter le reste des fichiers avec compression
           zip -rX ../ebook.epub content META-INF uploads
           
-      - name: Verify EPUB creation
-        run: |
-          echo "Contents of the current directory:"
-          ls -l ../  # Liste le contenu du répertoire parent pour vérifier la présence de ebook.epub
+          # Lister le contenu du répertoire parent pour vérifier la présence de ebook.epub
+          echo "Contents of the parent directory after EPUB creation:"
+          ls -l ../  # Vérifie si le fichier ebook.epub est présent
 
       - name: Move EPUB to public directory
-        run: mv ../ebook.epub ./public/  # Déplace ebook.epub dans le répertoire public
+        run: mv temp/ebook.epub ./public/  # Déplace ebook.epub dans le répertoire public
 
       - name: Build
         run: hugo 
