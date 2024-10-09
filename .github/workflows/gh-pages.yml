@@ -31,16 +31,19 @@ jobs:
       - name: Install jpegoptim
         run: sudo apt-get update && sudo apt-get install jpegoptim -y
 
+      - name: Build
+        run: hugo 
+
       - name: Generate EPUB
         run: |
           jpegoptim --max=85 *.jpg
-          hugo --cleanDestinationDir --environment epub -d temp
+          hugo --cleanDestinationDir --environment epub -d public
           
-          # Vérifie si le dossier 'temp' existe
-          if [ -d "temp" ]; then
-            echo "Le dossier 'temp' existe."
+          # Vérifie si le dossier 'public' existe
+          if [ -d "public" ]; then
+            echo "Le dossier 'public' existe."
           else
-            echo "Le dossier 'temp' n'existe pas. Vérifie les étapes précédentes."
+            echo "Le dossier 'public' n'existe pas. Vérifie les étapes précédentes."
           fi
 
           cd temp
@@ -61,9 +64,6 @@ jobs:
           mv ../ebook.epub ./public/
           echo "Contenu du répertoire public après le déplacement :"
           ls -l ./public/
-
-      - name: Build
-        run: hugo 
         
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
