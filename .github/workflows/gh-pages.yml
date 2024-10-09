@@ -12,7 +12,7 @@ permissions:
   pull-requests: write
 
 jobs:
-  hugo:
+  build:
     runs-on: ubuntu-22.04
     steps:
       - uses: actions/checkout@v3
@@ -33,52 +33,25 @@ jobs:
         run: |
           hugo --cleanDestinationDir --environment epub -d temp
           
-      - name: List Temp Directory
-        run: ls -l temp/
-      
       - name: Create EPUB
         run: |
           cd temp
           rm -f ebook.epub
           zip -rX ebook.epub mimetype content META-INF uploads
 
-      - name: List Temp Directory After EPUB Creation
-        run: ls -l temp/
-      
-      - name: Upload EPUB Artifact
-        uses: actions/upload-artifact@v3
-        with:
-          name: ebook
-          path: temp/ebook.epub
-
-  post_build:
-    runs-on: ubuntu-22.04
-    needs: hugo
-    steps:
-      - uses: actions/checkout@v3
-      - name: Build with Hugo for Default Environment
-        run: |
-          hugo --environment _default -d temp2
-      - name: List Temp2 Directory
-        run: ls -l temp2/
-      - name: Upload Temp2 as Artifact
-        uses: actions/upload-artifact@v3
-        with:
-          name: temp2
-          path: temp2
-
-  deploy:
-    runs-on: ubuntu-22.04
-    needs: post_build
-    steps:
       - name: Create Public Directory
         run: mkdir -p public
+
       - name: Copy EPUB to Public Directory
         run: cp temp/ebook.epub public/
+
+      - name: Build with Hugo for Default Environment
+        run: |
+          hugo --cleanDestinationDir --environment _default -d temp2
+
       - name: Copy Temp2 to Public Directory
         run: cp -r temp2/* public/
-      - name: List Public Directory
-        run: ls -l public/
+
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
