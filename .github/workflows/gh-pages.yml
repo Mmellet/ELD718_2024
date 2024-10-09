@@ -3,7 +3,7 @@ name: GitHub Pages
 on:
   push:
     branches:
-      - version_1831  # Set a branch to deploy
+      - master # Set a branch to deploy
   pull_request:
 
 permissions:
