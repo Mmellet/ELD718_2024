@@ -12,10 +12,8 @@ permissions:
   pull-requests: write
 
 jobs:
-  deploy:
+  hugo_version:
     runs-on: ubuntu-22.04
-    concurrency:
-      group: ${{ github.workflow }}-${{ github.ref }}
     steps:
       - uses: actions/checkout@v3
         with:
@@ -28,40 +26,76 @@ jobs:
           hugo-version: 'latest'
           extended: true
 
-      - name: Install jpegoptim
-        run: sudo apt-get update && sudo apt-get install jpegoptim -y
+      - name: Check Hugo Version
+        run: hugo version
 
-      - name: Build
-        run: hugo 
-
-      - name: Generate EPUB
+  pre_build:
+    runs-on: ubuntu-22.04
+    needs: hugo_version
+    steps:
+      - uses: actions/checkout@v3
+      - name: Build with Hugo
         run: |
-          jpegoptim --max=85 *.jpg
           hugo --cleanDestinationDir --environment epub -d temp
-          
-          # Vérifie si le dossier 'temp' existe
-          if [ -d "temp" ]; then
-            echo "Le dossier 'temp' existe."
-          else
-            echo "Le dossier 'temp' n'existe pas. Vérifie les étapes précédentes."
-          fi
+      - name: List Temp Directory
+        run: ls -l temp/
+      - name: Upload Temp as Artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: temp
+          path: temp
 
+  build:
+    runs-on: ubuntu-22.04
+    needs: pre_build
+    steps:
+      - name: Install zip/unzip
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y zip unzip
+      - name: Create EPUB
+        run: |
           cd temp
-          find uploads -name '*.jpg' -exec jpegoptim {} \;
-          rm -f ../ebook.epub
-          
-          # Créer l'EPUB
-          zip -X0 ../ebook.epub mimetype
-          zip -rX ../ebook.epub content META-INF uploads
+          rm -f ebook.epub
+          zip -rX ebook.epub mimetype content META-INF uploads
+      - name: List Temp Directory After EPUB Creation
+        run: ls -l temp/
+      - name: Upload EPUB Artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: ebook
+          path: temp/ebook.epub
 
-          # Lister le contenu du répertoire parent
-          echo "Contenu du répertoire parent après la création de l'EPUB :"
-          ls -l ../  # Vérifie si le fichier ebook.epub est présent
+  post_build:
+    runs-on: ubuntu-22.04
+    needs: build
+    steps:
+      - uses: actions/checkout@v3
+      - name: Build with Hugo for Default Environment
+        run: |
+          hugo --environment _default -d temp2
+      - name: List Temp2 Directory
+        run: ls -l temp2/
+      - name: Upload Temp2 as Artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: temp2
+          path: temp2
 
-        
-      - name: Deploy
+  deploy:
+    runs-on: ubuntu-22.04
+    needs: post_build
+    steps:
+      - name: Create Public Directory
+        run: mkdir -p public
+      - name: Copy EPUB to Public Directory
+        run: cp temp/ebook.epub public/
+      - name: Copy Temp2 to Public Directory
+        run: cp -r temp2/* public/
+      - name: List Public Directory
+        run: ls -l public/
+      - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
-        if: ${{ github.ref == 'refs/heads/master' }}
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./public
