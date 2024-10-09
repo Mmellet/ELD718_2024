@@ -11,7 +11,7 @@ relativeURLs = true
 disablePathToLower = true
 
 minify = false
-paginate = 999
+pagination.paperSize = 999
 pygmentsCodeFences = false
 pygmentsUseClasses = false
 
