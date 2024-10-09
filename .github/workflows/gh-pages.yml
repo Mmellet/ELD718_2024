@@ -52,6 +52,14 @@ jobs:
 
           # Étape 6: Ajouter le reste des fichiers avec compression
           zip -rX ../ebook.epub content META-INF uploads
+          
+      - name: Verify EPUB creation
+        run: |
+          echo "Contents of the current directory:"
+          ls -l ../  # Liste le contenu du répertoire parent pour vérifier la présence de ebook.epub
+
+      - name: Move EPUB to public directory
+        run: mv ../ebook.epub ./public/  # Déplace ebook.epub dans le répertoire public
 
       - name: Build
         run: hugo 
