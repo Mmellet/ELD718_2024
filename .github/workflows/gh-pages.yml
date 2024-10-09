@@ -37,10 +37,10 @@ jobs:
           jpegoptim --max=85 *.jpg
 
           # Étape 1: Exécuter Hugo pour générer le contenu dans le répertoire temp
-          hugo --cleanDestinationDir --environment epub -d temp
+          hugo --cleanDestinationDir --environment epub -d public
 
           # Étape 2: Naviguer dans le répertoire généré par Hugo
-          cd temp
+          cd public
 
           find uploads -name '*.jpg' -exec jpegoptim {} \;
 
