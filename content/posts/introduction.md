@@ -7,7 +7,35 @@ weight = 1
 chapitre = "non"
 +++
 
-The **Publishers** of the Standard Novels, in selecting “Frankenstein” for one of their series, expressed a wish that I should furnish them with some account of the origin of the story. I am the more willing to comply, because I shall thus give a general answer to the question, so very frequently asked me—“How I, then a young girl, came to think of, and to dilate upon, so very hideous an idea?" It is true that I am very averse to bringing myself forward in print; but as my account will only appear as an appendage to a former production, and as it will be confined to such topics as have connection with my authorship alone, I can scarcely accuse myself of a personal intrusion.
+
+Frankenstein, or the Modern Prometheus (Revised Edition, 1831) — Introduction
+
+
+					Mary Wollstonecraft Shelley
+
+
+
+
+
+Exported from Wikisource on October 9, 2024
+
+
+
+
+
+INTRODUCTION.
+
+
+
+
+
+* * *
+
+
+
+
+
+The Publishers of the Standard Novels, in selecting “Frankenstein” for one of their series, expressed a wish that I should furnish them with some account of the origin of the story. I am the more willing to comply, because I shall thus give a general answer to the question, so very frequently asked me—“How I, then a young girl, came to think of, and to dilate upon, so very hideous an idea?" It is true that I am very averse to bringing myself forward in print; but as my account will only appear as an appendage to a former production, and as it will be confined to such topics as have connection with my authorship alone, I can scarcely accuse myself of a personal intrusion.
 
 It is not singular that, as the daughter of two persons of distinguished literary celebrity, I should very early in life have thought of writing. As a child I scribbled; and my favourite pastime, during the hours given me for recreation, was to “write stories.” Still I had a dearer pleasure than this, which was the formation of castles in the air—the indulging in waking dreams—the following up trains of thought, which had for their subject the formation of a succession of imaginary incidents. My dreams were at once more fantastic and agreeable than my writings. In the latter I was a close imitator—rather doing as others had done, than putting down the suggestions of my own mind. What I wrote was intended at least for one other eye—my Childhood’s companion and friend; but my dreams were all my own; I accounted for them to nobody; they were my refuge when annoyed—my dearest pleasure when free.
 
@@ -19,7 +47,7 @@ In the summer of 1816, we visited Switzerland, and became the neighbours of Lord
 
 But it proved a wet, ungenial summer, and incessant rain often confined us for days to the house. Some volumes of ghost stories, translated from the German into French, fell into our hands. There was the History of the Inconstant Lover, who, when he thought to clasp the bride to whom he had pledged his vows, found himself in the arms of the pale ghost of her whom he had deserted. There was the tale of the sinful founder of his race, whose miserable doom it was to bestow the kiss of death on all the younger sons of his fated house, just when they reached the age of promise. His gigantic, shadowy form, clothed like the ghost in Hamlet, in complete armour, but with the beaver up, was seen at midnight, by the moon's fitful beams, to advance slowly along the gloomy avenue. The shape was lost beneath the shadow of the castle walls; but soon a gate swung back, a step was heard, the door of the chamber opened, and he advanced to the couch of the blooming youths, cradled in healthy sleep. Eternal sorrow sat upon his face as he bent down and kissed the forehead of the boys, who from that hour withered like flowers snapt upon the stalk. I have not seen these stories since then; but their incidents are as fresh in my mind as if I had read them yesterday.
 
-"We will each write a ghost story," said Lord Byron; and his proposition was acceded to. There were four of us. The noble author began a tale, a fragment of which he printed at the end of his poem of Mazeppa. Shelley, more apt to embody ideas and sentiments in the radiance of brilliant imagery, and in the music of the most melodious verse that adorns our language, than to invent the machinery of a story, commenced one founded on the experiences of his early life. Poor Palidori had some terrible idea about a skull-headed lady, who was so punished for peeping through a key-hole—what to see I forget—something very shocking and wrong of course; but when she was reduced to a worse condition than the renowned Tom of Coventry, he did not know what to do with her, and was obliged to despatch her to the tomb of the Capulets, the only place for which she was fitted. The illustrious poets also, annoyed by the platitude of prose, speedily relinquished their uncongenial task.
+"We will each write a ghost story," said Lord Byron; and his proposition was acceded to. There were four of us. The noble author began a tale, a fragment of which he printed at the end of his poem of Mazeppa. Shelley, more apt to embody ideas and sentiments in the radiance of brilliant imagery, and in the music of the most melodious verse that adorns our language, than to invent the machinery of a story, commenced one founded on the experiences of his early life. Poor Polidori had some terrible idea about a skull-headed lady, who was so punished for peeping through a key-hole—what to see I forget—something very shocking and wrong of course; but when she was reduced to a worse condition than the renowned Tom of Coventry, he did not know what to do with her, and was obliged to despatch her to the tomb of the Capulets, the only place for which she was fitted. The illustrious poets also, annoyed by the platitude of prose, speedily relinquished their uncongenial task.
 
 I busied myself to think of a story,—a story to rival those which had excited us to this task. One which would speak to the mysterious fears of our nature, and awaken thrilling horror—one to make the reader dread to look round, to curdle the blood, and quicken the beatings of the heart. If I did not accomplish these things, my ghost story would be unworthy of its name. I thought and pondered—vainly. I felt that blank incapability of invention which is the greatest misery of authorship, when dull Nothing replies to our anxious invocations. Have you thought of a story? I was asked each morning, and each morning I was forced to reply with a mortifying negative.
 
@@ -43,7 +71,30 @@ I will add but one word as to the alterations I have made. They are principally 
 
 M. W. S.
 
+
+
 London, October 15. 1831.
+
+
+
+
+
+About this digital edition
+
+
+This e-book comes from the online library Wikisource. This multilingual digital library, built by volunteers, is committed to developing a free accessible collection of publications of every kind: novels, poems, magazines, letters...
+
+We distribute our books for free, starting from works not copyrighted or published under a free license. You are free to use our e-books for any purpose (including commercial exploitation), under the terms of the Creative Commons Attribution-ShareAlike 4.0 Unported license or, at your choice, those of the GNU FDL.
+
+Wikisource is constantly looking for new members. During the transcription and proofreading of this book, it's possible that we made some errors. You can report them at this page.
+
+The following users contributed to this book:
+
+[The list of contributors has been omitted as requested.]
+
+
+
+
 
 
 
