@@ -14,6 +14,8 @@ permissions:
 jobs:
   deploy:
     runs-on: ubuntu-22.04
+    concurrency:
+      group: ${{ github.workflow }}-${{ github.ref }}
     steps:
       - uses: actions/checkout@v3
         with:
@@ -25,9 +27,6 @@ jobs:
         with:
           hugo-version: 'latest'
           extended: true
-
-      - name: Check Hugo Version
-        run: hugo version
 
   pre_build:
     runs-on: ubuntu-22.04
