@@ -12,10 +12,8 @@ permissions:
   pull-requests: write
 
 jobs:
-  hugo_version:
+  hugo:
     runs-on: ubuntu-22.04
-    concurrency:
-      group: ${{ github.workflow }}-${{ github.ref }}
     steps:
       - uses: actions/checkout@v3
         with:
@@ -28,37 +26,25 @@ jobs:
           hugo-version: 'latest'
           extended: true
 
-  pre_build:
-    runs-on: ubuntu-22.04
-    needs: hugo_version
-    steps:
-      - uses: actions/checkout@v3
-      - name: Build with Hugo
+      - name: Check Hugo Version
+        run: hugo version
+
+      - name: Build with Hugo (epub)
         run: |
           hugo --cleanDestinationDir --environment epub -d temp
+          
       - name: List Temp Directory
         run: ls -l temp/
-      - name: Upload Temp as Artifact
-        uses: actions/upload-artifact@v3
-        with:
-          name: temp
-          path: temp
-
-  build:
-    runs-on: ubuntu-22.04
-    needs: pre_build
-    steps:
-      - name: Install zip/unzip
-        run: |
-          sudo apt-get update
-          sudo apt-get install -y zip unzip
+      
       - name: Create EPUB
         run: |
           cd temp
           rm -f ebook.epub
           zip -rX ebook.epub mimetype content META-INF uploads
+
       - name: List Temp Directory After EPUB Creation
         run: ls -l temp/
+      
       - name: Upload EPUB Artifact
         uses: actions/upload-artifact@v3
         with:
@@ -67,7 +53,7 @@ jobs:
 
   post_build:
     runs-on: ubuntu-22.04
-    needs: build
+    needs: hugo
     steps:
       - uses: actions/checkout@v3
       - name: Build with Hugo for Default Environment
