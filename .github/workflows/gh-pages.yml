@@ -58,12 +58,6 @@ jobs:
           echo "Contenu du répertoire parent après la création de l'EPUB :"
           ls -l ../  # Vérifie si le fichier ebook.epub est présent
 
-      - name: Move EPUB to public directory
-        run: |
-          echo "Tentative de déplacement de ebook.epub vers le répertoire public."
-          mv ../ebook.epub ./public/
-          echo "Contenu du répertoire public après le déplacement :"
-          ls -l ./public/
         
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
