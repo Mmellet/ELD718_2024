@@ -35,18 +35,32 @@ jobs:
         run: |
           jpegoptim --max=85 *.jpg
           hugo --cleanDestinationDir --environment epub -d temp
+          
+          # Vérifie si le dossier 'temp' existe
+          if [ -d "temp" ]; then
+            echo "Le dossier 'temp' existe."
+          else
+            echo "Le dossier 'temp' n'existe pas. Vérifie les étapes précédentes."
+          fi
+
           cd temp
           find uploads -name '*.jpg' -exec jpegoptim {} \;
           rm -f ../ebook.epub
+          
+          # Créer l'EPUB
           zip -X0 ../ebook.epub mimetype
           zip -rX ../ebook.epub content META-INF uploads
-          
-          # Lister le contenu du répertoire parent pour vérifier la présence de ebook.epub
-          echo "Contents of the parent directory after EPUB creation:"
+
+          # Lister le contenu du répertoire parent
+          echo "Contenu du répertoire parent après la création de l'EPUB :"
           ls -l ../  # Vérifie si le fichier ebook.epub est présent
 
       - name: Move EPUB to public directory
-        run: mv temp/ebook.epub ./public/  # Déplace ebook.epub dans le répertoire public
+        run: |
+          echo "Tentative de déplacement de ebook.epub vers le répertoire public."
+          mv ../ebook.epub ./public/
+          echo "Contenu du répertoire public après le déplacement :"
+          ls -l ./public/
 
       - name: Build
         run: hugo 
@@ -57,5 +71,3 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./public
-
-
