@@ -4,48 +4,42 @@
   
   <url>
     <loc>/introduction/</loc>
-    <lastmod>2020-10-31T10:01:00+00:00</lastmod>
+    <lastmod>2024-10-10T10:01:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>/about/</loc>
-    <lastmod>2021-02-06T00:00:00+00:00</lastmod>
+    <lastmod>2024-10-10T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>/</loc>
-    <lastmod>2021-02-06T00:00:00+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>/pages/</loc>
-    <lastmod>2021-02-06T00:00:00+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>/toc/</loc>
-    <lastmod>2020-11-19T00:00:00+00:00</lastmod>
+    <lastmod>2024-10-10T10:01:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>/posts/</loc>
-    <lastmod>2020-10-31T10:01:00+00:00</lastmod>
+    <lastmod>2024-10-10T10:01:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>/test/</loc>
+    <loc>/pages/</loc>
+    <lastmod>2024-10-10T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>/toc/</loc>
+    <lastmod>2024-10-10T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
