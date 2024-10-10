@@ -1,6 +1,6 @@
 +++
 chapter = "Introduction"
-date = "2020-10-31T10:01:00.000+00:00"
+date = "2024-10-10T10:01:00.000+00:00"
 image = "images/logo.png"
 title = ""
 weight = 1
@@ -43,7 +43,10 @@ I will add but one word as to the alterations I have made. They are principally 
 
 M. W. S.
 
+
 London, October 15. 1831.
+
+![](https://mmellet.github.io/ELD718_2024/images/big-ben.svg)
 
 
 
