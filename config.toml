@@ -40,3 +40,5 @@ filename = "sitemap.xml"
 priority = 0.5
 [taxonomies]
 tag = "tags"
+[ebook]
+cover = "cover.jpg"

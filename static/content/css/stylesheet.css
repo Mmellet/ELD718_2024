@@ -1,7 +1,7 @@
 html {
   padding:1em; 
   margin:1em; 
-  font-family: sans-serif
+  font-family: serif
 } 
 
 /* Überschriften, Größe und Außenabstand, zentrieren */ 
@@ -89,4 +89,3 @@ table {border: thin solid; border-spacing:0}
 caption{font-family: serif; font-style: italic; text-align: center; caption-side: bottom }
 tr, td, th {border: thin solid}
 td, th {vertical-align: top; text-align:left; padding: 1ex }
-

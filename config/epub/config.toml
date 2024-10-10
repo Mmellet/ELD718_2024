@@ -1,4 +1,4 @@
-DefaultContentLanguage = "fr"
+DefaultContentLanguage = "en"
 baseURL = ""
 theme = "epub"
 

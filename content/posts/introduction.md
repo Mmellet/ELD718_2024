@@ -2,9 +2,9 @@
 chapter = "Introduction"
 date = "2024-10-10T10:01:00.000+00:00"
 image = "images/logo.png"
-title = ""
+title = "Introduction"
 weight = 1
-chapitre = "non"
+chapitre = "oui"
 +++
 
 The **Publishers** of the Standard Novels, in selecting “Frankenstein” for one of their series, expressed a wish that I should furnish them with some account of the origin of the story. I am the more willing to comply, because I shall thus give a general answer to the question, so very frequently asked me—“How I, then a young girl, came to think of, and to dilate upon, so very hideous an idea?" It is true that I am very averse to bringing myself forward in print; but as my account will only appear as an appendage to a former production, and as it will be confined to such topics as have connection with my authorship alone, I can scarcely accuse myself of a personal intrusion.

@@ -1,4 +1,4 @@
-DefaultContentLanguage = "fr"
+DefaultContentLanguage = "en"
 baseURL = "/"
 disableFastRender = true
 disableKinds = ["categories"]
