@@ -60,7 +60,11 @@ We returned to our college on a Sunday afternoon: the peasants were dancing, and
 
 
 
-.
+
+
+
+![ ](/chemin/access/image. jpg "Frankenstein in popular culture-wikipedia") 
+
 
 
 
