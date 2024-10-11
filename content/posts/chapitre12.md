@@ -1,6 +1,6 @@
 +++
 chapter = "Chapitre 12"
-date = "2024-10-10T10:01:00.000+00:00
+date = "2024-10-10T10:01:00.000+00:00"
 title = "Titre"
 weight = 13
 chapitre = "oui"
