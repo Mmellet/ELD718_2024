@@ -1,5 +1,5 @@
 +++
-chapter = "Chapitre NUMERO"
+chapter = "Chapitre 7"
 date = "2024-10-10T10:01:00.000+00:00"
 title = "Titre"
 weight = 8
@@ -7,9 +7,9 @@ chapitre = "oui"
 +++
 
 
-On my return, I found the following letter from my father:—
+On my return, I found the following letter from my father:—  
 
-"My dear Victor,
+    "My dear Victor,  
 
 "You have probably waited impatiently for a letter to fix the date of your return to us; and I was at first tempted to write only a few lines, merely mentioning the day on which I should expect you. But that would be a cruel kindness, and I dare not do it. What would be your surprise, my son, when you expected a happy and glad welcome, to behold, on the contrary, tears and wretchedness? And how, Victor, can I relate our misfortune? Absence cannot have rendered you callous to our joys and griefs; and how shall I inflict pain on my long absent son? I wish to prepare you for the woful news, but I know it is impossible; even now your eye skims over the page, to seek the words which are to convey to you the horrible tidings.
 
@@ -28,10 +28,10 @@ On my return, I found the following letter from my father:—
 "Come, dearest Victor; you alone can console Elizabeth. She weeps continually, and accuses herself unjustly as the cause of his death; her words pierce my heart. We are all unhappy; but will not that be an additional motive for you, my son, to return and be our comforter? Your dear mother! Alas, Victor! I now say, Thank God she did not live to witness the cruel, miserable death of her youngest darling!
 
 "Come, Victor; not brooding thoughts of vengeance against the assassin, but with feelings of peace and gentleness, that will heal, instead of festering, the wounds of our minds. Enter the house of mourning, my friend, but with kindness and affection for those who love you, and not with hatred for your enemies.
-
-"Your affectionate and afflicted father,
-
-"Alphonse Frankenstein.
+<p align =right>
+    "Your affectionate and afflicted father,    </p>
+<p align =right>
+"Alphonse Frankenstein.</p>
 
 
 
