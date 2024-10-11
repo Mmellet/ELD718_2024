@@ -5,13 +5,12 @@ title = "Titre"
 weight = 13 + 1
 chapitre = "oui"
 +++
-Frankenstein, or the Modern Prometheus (Revised Edition, 1831) — CHAPTER XIII
 
 
 					Mary Wollstonecraft Shelley
 
 
-
+Frankenstein, or the Modern Prometheus (Revised Edition, 1831) — CHAPTER XIII
 
 
 
