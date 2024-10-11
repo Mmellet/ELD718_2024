@@ -3,11 +3,8 @@ chapter = "Chapitre 12"
 date = "2024-10-10T10:01:00.000+00:00
 title = "Titre"
 weight = 13
-chapite = "oui"
+chapitre = "oui"
 +++
-
-
-
 
 "I lay on my straw, but I could not sleep. I thought of the occurrences of the day. What chiefly struck me was the gentle manners of these people; and I longed to join them, but dared not. I remembered too well the treatment I had suffered the night before from the barbarous villagers, and resolved, whatever course of conduct I might hereafter think it right to pursue, that for the present I would remain quietly in my hovel, watching, and endeavouring to discover the motives which influenced their actions.
 
