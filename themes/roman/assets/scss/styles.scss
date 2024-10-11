@@ -242,6 +242,8 @@ figcaption {
   padding: 4em 1em;
 }
 
+
+
 .content-title {
   font-size: 2em;
   margin-bottom: 2em;
@@ -357,6 +359,7 @@ figcaption {
 .post-list {
   margin: 1em 0;
   list-style: none;
+  overflow: visible;
   &:hover,
   &:focus-within {
     .post-link {

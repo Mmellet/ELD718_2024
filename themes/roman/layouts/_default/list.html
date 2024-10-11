@@ -11,7 +11,8 @@
   <main class="home" id="main" role="main" aria-label="Content">
     <h1 class="content-title divided">Contents</h1>
       <ul class="post-list">
-        {{ range (.Paginate ( where .Site.RegularPages "Section" "posts" ).ByWeight).Pages }}
+        {{ $paginator := .Paginate (where .Site.RegularPages "Section" "posts").ByWeight 100 }}
+        {{ range $paginator.Pages }}
           {{ if ne .Kind "section" }}
           <li>
             <a href="{{ .Permalink }}" title="{{ .Params.Chapter }}" class="post-link">
@@ -23,6 +24,16 @@
           {{ end }}
         {{ end }}
       </ul>
+
+      <!-- Ajout de la navigation de pagination -->
+      <nav class="pagination">
+        {{ if $paginator.HasPrev }}
+          <a href="{{ $paginator.Prev.URL }}">← Précédent</a>
+        {{ end }}
+        {{ if $paginator.HasNext }}
+          <a href="{{ $paginator.Next.URL }}">Suivant →</a>
+        {{ end }}
+      </nav>
     </main>
     {{ partial "header.html" . }}
     {{ partial "footer.html" . }}
