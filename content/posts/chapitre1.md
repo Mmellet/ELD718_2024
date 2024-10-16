@@ -2,9 +2,10 @@
 chapter = "Chapitre NUMERO"
 date = "2024-10-10T10:01:00.000+00:00"
 title = "Titre"
-weight = 1 + 1
+weight = 2
 chapitre = "oui"
 +++
+
 **Frankenstein, or the Modern Prometheus** (Revised Edition, 1831) — CHAPTER I
 
 
