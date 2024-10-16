@@ -1,15 +1,11 @@
 +++
-chapter = "Chapitre NUMERO"
+chapter = "Chapitre 1"
 date = "2024-10-10T10:01:00.000+00:00"
 title = "Titre"
 weight = 2
 chapitre = "oui"
 +++
 
-**Frankenstein, or the Modern Prometheus** (Revised Edition, 1831) — CHAPTER I
-
-
-					*Mary Wollstonecraft Shelley*
 
 
 
@@ -19,7 +15,7 @@ chapitre = "oui"
 
 
 
-**CHAPTER I.**
+
 
 
 
@@ -37,7 +33,7 @@ There was a considerable difference between the ages of my parents, but this cir
 
 From Italy they visited Germany and France. I, their eldest child, was born at Naples, and as an infant accompanied them in their rambles. I remained for several years their only child. Much as they were attached to each other, they seemed to draw inexhaustible stores of affection from a very mine of love to bestow them upon me. My mother's tender caresses, and my father's smile of benevolent pleasure while regarding me, are my first recollections. I was their plaything and their idol, and something better— their child, the innocent and helpless creature Bestowed on them by Heaven, whom to bring up to good, and whose future lot it was in their hands to direct to happiness or misery, according as they fulfilled their duties towards me. With this deep consciousness of what they owed towards the being to which they had given life, added to the active spirit of tenderness that animated both, it may be imagined that while during every hour of my infant life I received a lesson of patience, of charity, and of self-control, I was so guided by a silken cord, that all seemed but one train of enjoyment to me.
 
-For a long time I was their only care. My mother had much desired to have a daughter, but I continued their single offspring. When I was about five years old, while making an excursion beyond the frontiers of Italy, they passed a week on the shores of the Lake of Como. Their benevolent disposition often made them enter the cottages of the poor. This, to my mother, was more than a duty; it was a necessity, a passion,—remembering what she had suffered, and how she had been relieved,—for her to act in her turn the guardian angel to the afflicted. During one of their walks a poor cot in the foldings of a vale attracted their notice, as being singularly disconsolate, while the number of half-clothed children gathered about it, spoke of penury in its worst shape. One day, when my father had gone by himself to Milan, my mother, accompanied by me, visited this abode. She found a peasant and his wife, hard working, bent down by care and labour, distributing a scanty meal to five hungry babes. Among these there was one which attracted my mother far above all the rest. She appeared of a different stock. The four others were dark-eyed, hardy little vagrants; this child was thin, and very fair. Her hair was the brightest living gold, and, despite the poverty of her clothing, seemed to set a crown of distinction on her head. Her brow was clear and ample, her blue eyes cloudless, and her lips and the moulding of her face so expressive of sensibility and sweetness, that none could behold her without looking on her as of a distinct species, a being heaven-sent, and bearing a celestial stamp in all her features.
+For a long time I was their only care. My mother had much desired to have a daughter, but I continued their single offspring. When I was about five years old, while making an excursion beyond the frontiers of Italy, they passed a week on the shores of the [Lake of Como] (https://en.wikipedia.org/wiki/Lake_Como). Their benevolent disposition often made them enter the cottages of the poor. This, to my mother, was more than a duty; it was a necessity, a passion,—remembering what she had suffered, and how she had been relieved,—for her to act in her turn the guardian angel to the afflicted. During one of their walks a poor cot in the foldings of a vale attracted their notice, as being singularly disconsolate, while the number of half-clothed children gathered about it, spoke of penury in its worst shape. One day, when my father had gone by himself to Milan, my mother, accompanied by me, visited this abode. She found a peasant and his wife, hard working, bent down by care and labour, distributing a scanty meal to five hungry babes. Among these there was one which attracted my mother far above all the rest. She appeared of a different stock. The four others were dark-eyed, hardy little vagrants; this child was thin, and very fair. Her hair was the brightest living gold, and, despite the poverty of her clothing, seemed to set a crown of distinction on her head. Her brow was clear and ample, her blue eyes cloudless, and her lips and the moulding of her face so expressive of sensibility and sweetness, that none could behold her without looking on her as of a distinct species, a being heaven-sent, and bearing a celestial stamp in all her features.
 
 
 
